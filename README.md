@@ -1,54 +1,243 @@
-# Astro Starter Kit: Basics
+# Ementa das aulas
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Parte 1 - Lógica de Programação
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### 1. Introdução
+- Configurando o ambiente
+- Output no console
+- Variáveis e tipos primitivos + string
+- Input do console  
+- If else
+- Extra: ifs nestados
+- Comentários
+- Exercícios
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### 2. Controle de Fluxo
+- While
+- For
+- Break, continue
+- Extra: loops nestados
+- Exercícios
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+### 3. Arrays e Matrizes
+- Declaração de arrays
+- Arrays de tamanho definido em runtime
+- Declaração de matrizes
+- Iterando sobre arrays
+- Iterando sobre matrizes
+- Analogias para visualizar N dimensões
+- Exercícios
 
-## 🚀 Project Structure
+### 4. Funções
+- Definição
+- Utilizando valores de retorno
+- Recursividade
+- Exercícios
 
-Inside of your Astro project, you'll see the following folders and files:
+### 5. Structs
+- Definição
+- Passando structs como parâmetros
+- Exercícios
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### 6. Memória
+- Entendendo a disposição da memória
+- Stack vs Heap
+- Ponteiros
+- malloc e new
+- Notas sobre Garbage Collector
+- Exercícios
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### 8. Introdução a Otimização
+- Motivação
+- Contagem de instruções
+- Análise assintótica
+- Considerações sobre hardware
+- Exercícios
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### 7. Ordenação
+- Motivação
+- Lista de algoritmos comumente utilizados
+- Insertion Sort
+- Merge Sort
+- Counting Sort
+- Contagem de inversões
+- Heap Sort (por cima)
+- Exercícios
 
-Any static assets, like images, can be placed in the `public/` directory.
+### 8. Estruturas de Dados Abstratas do C++
+- Motivação
+- pair
+- vector
+- list e forward_list
+- stack
+- queue
+- deque
+- set
+- map
+- Exercícios
 
-## 🧞 Commands
+### 9. Grafos e Árvores
+- Motivação
+- Conceitos
+- Matriz de adjacência
+- Lista de adjacência
+- Busca por profundidade
+- Busca por largura
+- Encontrando componentes conexas
+- Caminho mínimo (Dijkstra)
+- Caixeiro Viajante
+- Ordenação topológica
+- Árvores geradoras mínimas (minimum spanning tree)
+- Exercícios
 
-All commands are run from the root of the project, from a terminal:
+### 10. Aritmética e Geometria Aplicadas
+- Revisão do básico
+- Teorema de Pitágoras
+- Distância Euclidiana
+- Distância de Manhattan
+- Vetores
+- Números primos
+- Crivo de Erastótenes
+- Convex Hull
+- Aritmética modular simples
+- Exercícios
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### 11. Otimizações Gerais
+- Busca Binária
+- Soma de Prefixos
+- Árvore de Segmentos
+- Lazy Propagation
+- BIT (Árvore de Fenwick)
+- Retornando às estruturas de dados
+- Union-find
+- Exercícios
 
-## 👀 Want to learn more?
+### 12. Gulosos e Programação Dinâmica
+- Introdução
+- Problema das Palestras
+- Problema da Moeda
+- Problema da Mochila
+- Longest Common Subsequence
+- Exercícios
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### 13. Convenções de Código
+- Motivação
+- Indentação
+- Convenções de nomes
+
+## Parte 2 - Desenvolvimento Web
+
+### 1. HTML
+- Conceitos
+- Tags importantes
+- Semântica
+- Material
+
+### 2. CSS
+- Conceitos
+- Propriedades importantes
+- Material
+
+### 3. JavaScript
+- Conceitos
+- Sintaxe
+- Paralelo ao C++
+- Objetos e Arrays no JavaScript
+- Manipulações na DOM
+- fetch API
+- Exercícios
+
+### 4. Web Stack
+- Conceitos
+- Protocolos (TCP, UDP, HTTP, FTP, WebSockets, SMTP)
+- Tecnologias Frontend
+- Tecnologias Backend
+- SGBDs
+
+### 5. Protocolo HTTP
+- Estrutura de um Request
+- Estrutura de uma Response
+- Material
+
+### 6. Comunicação por Sockets do C++
+- Motivação
+- Conectando dois computadores
+- Realizando um request e obtendo uma resposta
+- Exercícios
+
+### 7. Frontend: React
+- Conceitos
+- Configurando o ambiente
+- Hello World
+- useState e useEffect
+- Outros hooks
+- Componentes
+- 'use server' e 'use client'
+- Integrando com Tailwind CSS
+- Integrando com zod
+- Introdução ao Nextjs
+- Exercícios
+
+### 8. Backend: Nodejs + Express
+- Conceitos
+- Configurando o ambiente
+- Criando rotas API
+- Comunicação com o Banco de Dados
+- Utilizando uma ORM
+- Utilizando WebSockets
+- Exercícios
+
+### 9. Backend: Go
+- Conceitos
+- Sintaxe
+- Paralelo ao Nodejs
+- Exercícios
+
+### 10. Bancos de Dados
+- Conceitos
+- Tipos de Bancos de Dados
+- SQL
+- NoSQL
+- Modelagem
+- Caching com Redis
+- Exercícios
+
+### 11. Web Scraping e Consumo de API
+- Conceitos
+- Demonstração
+- Exercícios
+
+# Parte 3 - Conceitos Avançados
+
+### 1. Programação Orientada a Objetos
+- Motivação
+- Conceitos
+- Composição
+- Herança
+- Polimorfismo
+- Encapsulamento
+- Interfaces
+- Custo Benefício
+
+### 2. Design Patterns
+- Conceitos
+- Gerais
+- Factory
+- Singleton
+- Object Pool
+- Builder
+- Adapter/Wrapper
+- Proxy
+- Memento
+- Observer
+
+### 3. Programação Orientada a Dados
+- Motivação
+- Conceitos
+- Demonstração
+
+### 4. Programação Funcional
+- TODO
+
+### 5. Introdução a Assembly
+- TODO
