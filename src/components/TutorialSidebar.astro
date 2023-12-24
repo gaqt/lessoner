@@ -1,7 +1,18 @@
 ---
+
+type entry = {
+    name: string,
+    href: string,
+}
+
+type topic = {
+    name: string,
+    entries: entry[],
+}
+
 interface Props {
-    tutorialName: String
-    topics: any[]
+    tutorialName: string,
+    topics: topic[],
 }
 
 const { topics, tutorialName } = Astro.props
