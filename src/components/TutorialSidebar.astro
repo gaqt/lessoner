@@ -1,0 +1,22 @@
+---
+interface Props {
+    tutorialName: String
+    topics: any[]
+}
+
+const { topics, tutorialName } = Astro.props
+---
+
+<div class="border-e-4 border-e-fuchsia-600 p-5 max-w-80">
+    <h2 class="text-xl">{tutorialName}</h2>
+    <hr><br>
+   {topics.map(topic => (
+    <h3 class="text-lg">{topic.name}</h3>
+    <hr>
+    <ul>
+        {topic.entries.map(entry => (
+        <li><a href={entry.href}>{entry.name}</a></li>
+        ))}
+    </ul>
+    ))}
+</div>
