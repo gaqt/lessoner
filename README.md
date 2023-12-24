@@ -3,6 +3,7 @@
 ## Parte 1 - Lógica de Programação
 
 ### 1. Introdução
+- Configurando o ambiente
 - Output no console
 - Variáveis e tipos primitivos + string
 - Input do console  
@@ -43,6 +44,7 @@
 - Stack vs Heap
 - Ponteiros
 - malloc e new
+- Notas sobre Garbage Collector
 - Exercícios
 
 ### 8. Introdução a Otimização
@@ -118,3 +120,124 @@
 - Longest Common Subsequence
 - Exercícios
 
+### 13. Convenções de Código
+- Motivação
+- Indentação
+- Convenções de nomes
+
+## Parte 2 - Desenvolvimento Web
+
+### 1. HTML
+- Conceitos
+- Tags importantes
+- Semântica
+- Material
+
+### 2. CSS
+- Conceitos
+- Propriedades importantes
+- Material
+
+### 3. JavaScript
+- Conceitos
+- Sintaxe
+- Paralelo ao C++
+- Objetos e Arrays no JavaScript
+- Manipulações na DOM
+- fetch API
+- Exercícios
+
+### 4. Web Stack
+- Conceitos
+- Protocolos (TCP, UDP, HTTP, FTP, WebSockets, SMTP)
+- Tecnologias Frontend
+- Tecnologias Backend
+- SGBDs
+
+### 5. Protocolo HTTP
+- Estrutura de um Request
+- Estrutura de uma Response
+- Material
+
+### 6. Comunicação por Sockets do C++
+- Motivação
+- Conectando dois computadores
+- Realizando um request e obtendo uma resposta
+- Exercícios
+
+### 7. Frontend: React
+- Conceitos
+- Configurando o ambiente
+- Hello World
+- useState e useEffect
+- Outros hooks
+- Componentes
+- 'use server' e 'use client'
+- Integrando com Tailwind CSS
+- Integrando com zod
+- Introdução ao Nextjs
+- Exercícios
+
+### 8. Backend: Nodejs + Express
+- Conceitos
+- Configurando o ambiente
+- Criando rotas API
+- Comunicação com o Banco de Dados
+- Utilizando uma ORM
+- Utilizando WebSockets
+- Exercícios
+
+### 9. Backend: Go
+- Conceitos
+- Sintaxe
+- Paralelo ao Nodejs
+- Exercícios
+
+### 10. Bancos de Dados
+- Conceitos
+- Tipos de Bancos de Dados
+- SQL
+- NoSQL
+- Modelagem
+- Caching com Redis
+- Exercícios
+
+### 11. Web Scraping e Consumo de API
+- Conceitos
+- Demonstração
+- Exercícios
+
+# Parte 3 - Conceitos Avançados
+
+### 1. Programação Orientada a Objetos
+- Motivação
+- Conceitos
+- Composição
+- Herança
+- Polimorfismo
+- Encapsulamento
+- Interfaces
+- Custo Benefício
+
+### 2. Design Patterns
+- Conceitos
+- Gerais
+- Factory
+- Singleton
+- Object Pool
+- Builder
+- Adapter/Wrapper
+- Proxy
+- Memento
+- Observer
+
+### 3. Programação Orientada a Dados
+- Motivação
+- Conceitos
+- Demonstração
+
+### 4. Programação Funcional
+- TODO
+
+### 5. Introdução a Assembly
+- TODO
