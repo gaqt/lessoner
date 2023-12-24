@@ -94,7 +94,7 @@
 - Revisão do básico
 - Teorema de Pitágoras
 - Distância Euclidiana
-- Distsância de Manhattan
+- Distância de Manhattan
 - Vetores
 - Números primos
 - Crivo de Erastótenes
