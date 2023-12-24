@@ -1,0 +1,35 @@
+---
+import Layout from "../../../layouts/Layout.astro"
+import Terminal from "../../../components/Terminal.astro"
+---
+
+<Layout title="Configurando o Ambiente">
+    <h1 class="text-2xl">Configurando o Ambiente</h1><br>
+    <p>Neste tutorial iremos configurar o ambiente para desenvolvimento na linguagem C++
+    para os próximos tutoriais.</p><br>
+    <h2 class="text-lg font-bold">Se você está no Windows:</h2>
+    <div class="ps-4">
+        Você pode optar por compilar os códigos pelo CMD instalando manualmente o MinGW pelo <a class="text-blue-600" href="https://www.msys2.org/">MYSYS2</a> ou: <br>
+        <a class="text-blue-600" href="https://www.codeblocks.org/downloads/">Instalar o CodeBlocks</a> (recomendado para iniciantes)
+        <br><br>
+        Caso opte pelo CodeBlocks, faça download da "binary release". Durante a instalação, se houver, marque a opção para instalar o MinGW.
+        Em seguida instale e inicie o CodeBlocks.<br>
+        Para criar um novo arquivo, vá ao canto superior direito e clique em:<br>
+        File > New File > C/C++ Source e por fim selecione onde o arquivo deve residir (coloque .cpp no final do nome do arquivo).
+        <br><br>
+        Caso opte por compilar e rodar por CMD, após a instalação do MinGW, basta ir para a pasta onde o arquivo reside e rodar:<br>
+        <Terminal>
+            g++ nome-do-arquivo.cpp<br>
+            .\a.exe
+        </Terminal>
+    </div>
+    <br>
+    <h2 class="text-lg font-bold">Se você está no Linux:</h2>
+    <div class="ps-3">
+        O compilador de C++ muito provavelmente já vem instalado, então basta para compilar e rodar um arquivo basta rodar:
+        <Terminal>
+            g++ nome-do-arquivo.cpp<br>
+            ./a.out
+        </Terminal>
+    </div>
+</Layout>

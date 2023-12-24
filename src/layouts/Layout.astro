@@ -1,13 +1,16 @@
 ---
 import TutorialSidebar from "../components/TutorialSidebar.astro"
 interface Props {
-	title: string;
+	title: string,
 }
 const topics = [
 	{
-		'name': 'topicA',
+		'name': 'Parte 1 - Lógica de Programação',
+		'entries': []
+	}, {
+		'name': 'Introdução',
 		'entries': [
-			{'name': 'a1', 'href': 'ha1'},
+			{'name': 'Configurando o Ambiente', 'href': '/p1/intro/configurando-o-ambiente'},
 			{'name': 'a2', 'href': 'ha2'},
 			{'name': 'a3', 'href': 'ha3'},
 		]
@@ -20,6 +23,8 @@ const topics = [
 		]
 	}
 ]
+
+const tutorialName = "Computer Science 101"
 
 const { title } = Astro.props;
 ---
@@ -35,11 +40,14 @@ const { title } = Astro.props;
 	</head>
 	<body class="font-sans">
 		<header class="bg-fuchsia-600 text-white p-3">
-			<h1 class="text-3xl font-bold">Lessoner</h1>
+			<a href="/"><h1 class="text-3xl font-bold">Lessoner</h1></a>
 		</header>
 		<main class="flex flex-row gap-4 mt-4">
-			<TutorialSidebar topics={topics} tutorialName="tutorial" />
-			<slot />
+			<TutorialSidebar topics={topics} tutorialName={tutorialName} />
+			<div class="max-w-4xl">
+				<slot />
+				<div class="min-h-60" />
+			</div>
 		</main>
 	</body>
 </html>
