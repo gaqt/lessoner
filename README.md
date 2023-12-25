@@ -120,7 +120,14 @@
 - Longest Common Subsequence
 - Exercícios
 
-### 13. Convenções de Código
+### 13. Concorrência
+- Motivação
+- Estilos
+- Implementação
+- Cuidados
+- Exercícios
+
+### 14. Convenções de Código
 - Motivação
 - Indentação
 - Convenções de nomes
@@ -207,7 +214,7 @@
 - Demonstração
 - Exercícios
 
-# Parte 3 - Conceitos Avançados
+## Parte 3 - Conceitos Avançados
 
 ### 1. Programação Orientada a Objetos
 - Motivação
