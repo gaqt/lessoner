@@ -30,10 +30,10 @@ const { topics, tutorialName } = Astro.props
     <Fragment>
         <h3 class="text-xl font-bold">{topic.name}</h3>
         {topic.sections.map(section => (
-        <div class="ps-3">
+        <div class="ps-3 mt-4">
             <a href={section.entries[0]?.href}><h4 class="text-lg">{section.name}</h4></a>
             {section.entries.map(entry => (
-            <a class="text-sm ps-3 block" href={entry.href}>{entry.name}</a>
+            <a class="text-sm ps-3 block mt-1" href={entry.href}>{entry.name}</a>
             ))}
         </div>
         ))}

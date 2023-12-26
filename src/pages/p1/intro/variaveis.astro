@@ -9,6 +9,9 @@ const code1 = await fs.readFile(url1, "utf-8");
 
 const url2 = new URL(process.cwd() + "/src/assets/variaveis2.cpp", import.meta.url);
 const code2 = await fs.readFile(url2, "utf-8");
+
+const url3 = new URL(process.cwd() + "/src/assets/variaveis3.cpp", import.meta.url);
+const code3 = await fs.readFile(url3, "utf-8");
 ---
 
 <Layout title="Variáveis e Tipos">
@@ -62,4 +65,8 @@ const code2 = await fs.readFile(url2, "utf-8");
     <p>Uai, mas e aquele ".c_str()"? Acontece que o printf não entende variáveis do tipo "string", ele só entende cadeias de caracteres e a "string" é um pouco mais que isso, então podemos converter a string em uma cadeia de caracteres (ou string do C) usando a função ".c_str()". Veremos detalhes sobre como isso funciona mais para frente.</p>
     <br>
     <p>Note que temos que escrever "std::string", não só "string", pois "string" faz parte da namespace "std". Em poucos termos, isso significa que "string" não está acessível globalemente e precisamos usar o "std" para acessá-la. É possível contornar isso escrevendo "using namespace std;" antes da main, mas não é uma boa prática para projetos maiores do que poucos arquivos.</p>
+    <br>
+    <p>Podemos também redefinir o valor das variáveis (mas nunca seu tipo!) depois que as mesmas foram criadas, daí vem o nome "variável", exemplo:</p>
+    <br>
+    <Code code={code3} lang="C++" title="variaveis3.cpp" />
 </Layout>
