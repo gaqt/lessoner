@@ -5,9 +5,14 @@ type entry = {
     href: string,
 }
 
-type topic = {
+type section = {
     name: string,
     entries: entry[],
+}
+
+type topic = {
+    name: string,
+    sections: section[],
 }
 
 interface Props {
@@ -19,15 +24,19 @@ const { topics, tutorialName } = Astro.props
 ---
 
 <div class="lg:border-e-4 lg:border-e-fuchsia-600 p-5 lg:max-w-80">
-    <h2 class="text-lg">{tutorialName}</h2>
+    <h2 class="text-2xl">{tutorialName}</h2>
     <hr><br>
-   {topics.map(topic => (
-    <h3 class="text-base">{topic.name}</h3>
-    <hr>
-    <ul>
-        {topic.entries.map(entry => (
-        <li><a class="text-sm ps-4" href={entry.href}>{entry.name}</a></li>
+    {topics.map(topic => (
+    <Fragment>
+        <h3 class="text-xl font-bold">{topic.name}</h3>
+        {topic.sections.map(section => (
+        <div class="ps-3">
+            <a href={section.entries[0]?.href}><h4 class="text-lg">{section.name}</h4></a>
+            {section.entries.map(entry => (
+            <a class="text-sm ps-3 block" href={entry.href}>{entry.name}</a>
+            ))}
+        </div>
         ))}
-    </ul>
+    </Fragment>
     ))}
 </div>
