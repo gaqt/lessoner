@@ -1,0 +1,17 @@
+---
+import hljs from "highlight.js"
+import "highlight.js/styles/atom-one-dark.css"
+
+interface Props {
+    code: string,
+    lang: string,
+    title: string,
+}
+
+const { code, lang, title } = Astro.props;
+const highlightedCode = hljs.highlight(code, {language: lang}).value;
+---
+
+<pre class="bg-zinc-950 text-slate-100 p-3 font-mono w-fit rounded-lg">
+{title && <span class="text-lg font-bold">{title}</span><br><hr>}
+<code set:html={highlightedCode}></code></pre>

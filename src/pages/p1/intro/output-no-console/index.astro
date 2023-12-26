@@ -1,0 +1,13 @@
+---
+import Layout from "/src/layouts/Layout.astro"
+import Code from "/src/components/Code.astro"
+
+import fs from "node:fs/promises"
+
+const url = new URL("./code.cpp", import.meta.url);
+const code = await fs.readFile(url, "utf-8");
+---
+
+<Layout title="Output no Console">
+    <Code code={code} lang="C++" title="hello-world.cpp" />
+</Layout>
