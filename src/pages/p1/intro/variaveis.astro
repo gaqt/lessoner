@@ -1,0 +1,65 @@
+---
+import Layout from "../../../layouts/Layout.astro"
+import Code from "../../../components/Code.astro"
+
+import fs from "node:fs/promises"
+
+const url1 = new URL(process.cwd() + "/src/assets/variaveis1.cpp", import.meta.url);
+const code1 = await fs.readFile(url1, "utf-8");
+
+const url2 = new URL(process.cwd() + "/src/assets/variaveis2.cpp", import.meta.url);
+const code2 = await fs.readFile(url2, "utf-8");
+---
+
+<Layout title="Variáveis e Tipos">
+    <h1 class="text-2xl">Variáveis e Tipos</h1>
+    <br>
+    <p>Uma variável é um espaço de armazenamento na memória que tem um nome associado e um tipo que define o que pode ser armazenado nele. Em C++, você deve declarar uma variável antes de usá-la.</p>
+    <br>
+    <p>O C++ possui alguns tipos primitivos, estes são:</p>
+    <ul class="ps-5 list-disc">
+        <li>char: um inteiro de 8 bits, comumente utilizado para representar caracteres na tabela ASCII</li>
+        <li>short: um inteiro de 16 bits</li>
+        <li>int: um inteiro de (geralmente) 32 bits</li>
+        <li>long: um inteiro de (geralmente) 64 bits</li>
+        <li>long long: um inteiro de 64 bits</li>
+        <li>float: um número ponto flutuante de 32 bits</li>
+        <li>double: um número ponto flutuante de (geralmente) 64 bits</li>
+        <li>long double: um número ponto flutuante de (geralmente) 80 bits</li>
+        <li>bool: um valor booleano, pode ser ou "true" ou "false"</li>
+    </ul>
+    <br>
+    <p>Como assim "geralmente"? Bom, existem algumas diferentes implementações sobre os modelos de dados do C++, e estas diferem na quantidade de bits reservados para cada tipo, no entanto ainda mantém a progressão descrita.</p>
+    <br>
+    <p>Estes tipos ainda podem ter modificadores "signed" (padrão) e "unsigned". Por exemplo, um "signed char" pode armazenar números de -128 até 127, porém um "unsigned char" pode armazenar números de 0 a 255.</p>
+    <p>O "unsigned" torna a variável incapaz de armazenar valores negativos, mas dobra sua capacidade para números positivos.</p>
+    <br>
+    <p>Esta lista também não é extensiva, para uma leitura mais completa, acesse <a class="text-blue-600" href="https://en.cppreference.com/w/cpp/language/types">https://en.cppreference.com/w/cpp/language/types</a></p>
+    <br>
+    <p>Veja um exemplo:</p>
+    <br>
+    <Code code={code1} lang="C++" title="variaveis1.cpp" />
+    <br>
+    <p>Aqui podemos ver outra funcionalidade do "printf" também: caso você escreva o especificador %d no texto, por exemplo, pode fornecer um número inteiro para substituir o especificador com o inteiro fornecido. Alguns especificadores comuns são:</p>
+    <ul class="ps-5 list-disc">
+        <li>%d ou %i: inteiro decimal "signed"</li>
+        <li>%u: inteiro decimal "unsigned"</li>
+        <li>%x: inteiro hexadecimal "unsigned"</li>
+        <li>%f: ponto flutuante</li>
+        <li>%.xf: ponto flutuante com x casas decimais (especificar x, exemplo: %.2f)</li>
+        <li>%c: caractere</li>
+        <li>%s: string (array de caracteres)</li>
+        <li>%p: endereço de ponteiro (veremos mais à frente nos tutoriais)</li>
+        <li>%%: é interpretado como apenas %</li>
+    </ul>
+    <br>
+    <p>Também podemos ver que o especificador "\n" pula para a próxima linha.</p>
+    <br>
+    <p>Outro tipo muito comumente utilizado para armazenar cadeias de caracteres é o tipo "string":</p>
+    <br>
+    <Code code={code2} lang="C++" title="variaveis2.cpp" />
+    <br>
+    <p>Uai, mas e aquele ".c_str()"? Acontece que o printf não entende variáveis do tipo "string", ele só entende cadeias de caracteres e a "string" é um pouco mais que isso, então podemos converter a string em uma cadeia de caracteres (ou string do C) usando a função ".c_str()". Veremos detalhes sobre como isso funciona mais para frente.</p>
+    <br>
+    <p>Note que temos que escrever "std::string", não só "string", pois "string" faz parte da namespace "std". Em poucos termos, isso significa que "string" não está acessível globalemente e precisamos usar o "std" para acessá-la. É possível contornar isso escrevendo "using namespace std;" antes da main, mas não é uma boa prática para projetos maiores do que poucos arquivos.</p>
+</Layout>
