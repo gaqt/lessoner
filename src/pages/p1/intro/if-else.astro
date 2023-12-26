@@ -1,0 +1,41 @@
+---
+import Layout from "../../../layouts/Layout.astro"
+import Code from "../../../components/Code.astro"
+
+import fs from "node:fs/promises"
+
+const url1 = new URL(process.cwd() + "/src/assets/if-else1.cpp", import.meta.url);
+const code1 = await fs.readFile(url1, "utf-8");
+
+const url2 = new URL(process.cwd() + "/src/assets/if-else2.cpp", import.meta.url);
+const code2 = await fs.readFile(url2, "utf-8");
+
+const url3 = new URL(process.cwd() + "/src/assets/if-else3.cpp", import.meta.url);
+const code3 = await fs.readFile(url3, "utf-8");
+---
+
+<Layout title="If e Else">
+    <h1 class="text-2xl">If e Else</h1>
+    <br>
+    <p>Até agora vimos como mostrar valores no console, ler valores da entrada e armazenar estes valores, porém nossos códigos ainda não poduem nenhum tipo de "controle de fluxo", eles realizam sempre o mesmo fluxo de início ao fim. Agora iremos aprender como realizar ações condicionalmente, isto é, caso (condição), faça (ação1), caso contrário, faça (ação2).</p>
+    <p>As estruturas utilizadas para realizar este controle são o "if" e o "else" (por agora), segue um exemplo:</p>
+    <br>
+    <Code code={code1} lang="C++" title="if-else1.cpp" />
+    <br>
+    <p>Veja que utilizamos o operador de comparação ">", existem alguns operadores de comparação no C++, estes são:</p>
+    <ul class="ps-5 list-disc">
+        <li>== igual a</li>
+        <li>!= não é igual a</li>
+        <li>&gt; é maior que</li>
+        <li>&gt;= é maior ou igual a</li>
+        <li>&lt; é menor que</li>
+        <li>&lt;= é menor ou igual a</li>
+    </ul>
+    <p>Você também pode utilizar os operadores lógicos && (AND), || (OR) e ! (NOT) para criar condições compostas, veja um exemplo:</p>
+    <br>
+    <Code code={code2} lang="C++" title="if-else2.cpp" />
+    <br>
+    <p>Você também pode encadear os 'if's e 'else's para lidar com múltiplas condições (embora não seja recomendado no geral por questões de legibilidade):</p>
+    <br>
+    <Code code={code3} lang="C++" title="if-else3.cpp" />
+</Layout>

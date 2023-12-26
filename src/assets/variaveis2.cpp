@@ -7,13 +7,13 @@ int main() {
 
   // Concatenando strings
   std::string sobrenome = "Silva";
-  std::string nomeCompleto = nome + " " + sobrenome;
+  std::string nome_completo = nome + " " + sobrenome;
 
   // Imprimindo a string resultante
-  printf("Nome Completo: %s\n", nomeCompleto.c_str());
+  printf("Nome Completo: %s\n", nome_completo.c_str());
 
   // Obtendo o comprimento da string
-  printf("Comprimento da string: %d\n", nomeCompleto.length());
+  printf("Comprimento da string: %d\n", nome_completo.length());
 
   return 0;
 }
