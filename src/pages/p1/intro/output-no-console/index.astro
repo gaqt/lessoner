@@ -4,7 +4,7 @@ import Code from "../../../../components/Code.astro"
 
 import fs from "node:fs/promises"
 
-const url = new URL("./code.cpp", import.meta.url);
+const url = new URL(process.cwd() + "/src/assets/hello-world.cpp", import.meta.url)
 const code = await fs.readFile(url, "utf-8");
 ---
 

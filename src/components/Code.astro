@@ -9,6 +9,7 @@ interface Props {
 }
 
 const { code, lang, title } = Astro.props;
+
 const highlightedCode = hljs.highlight(code, {language: lang}).value;
 ---
 
