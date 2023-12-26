@@ -1,0 +1,19 @@
+---
+import Layout from "../../../layouts/Layout.astro"
+import Code from "../../../components/Code.astro"
+
+import fs from "node:fs/promises"
+
+const url = new URL(process.cwd() + "/src/assets/input.cpp", import.meta.url);
+const code = await fs.readFile(url, "utf-8");
+---
+
+<Layout title="Input do Console">
+    <h1 class="text-2xl">Input do Console</h1>
+    <br>
+    <p>Podemos usar a função "scanf" para receber entrada do console, especificando o tipo da variável que queremos receber e a variável em si.</p>
+    <br>
+    <Code code={code} lang="C++" title="input.cpp" />
+    <br>
+    <p>Não se preocupe muito com a notação utilizando o &, veremos o significado disto mais para frente.</p>
+</Layout>
