@@ -19,8 +19,18 @@ const topics = [
 					{'name': 'Exercícios', 'href': '/p1/intro/exercicios'}
 				]
 			},
+      {
+        'name': 'Loops',
+        'entries': [
+          {'name': 'While', 'href': '/p1/loops/while'},
+          {'name': 'For', 'href': '/p1/loops/for'},
+          {'name': 'Break, Continue', 'href': '/p1/loops/break-continue'},
+          {'name': 'Extra: Loops Encadeados', 'href': '/p1/loops/loops-encadeados'},
+          {'name': 'Exercícios', 'href': '/p1/loops/exercicios'}
+        ]
+      }
 		]
-	}
+	},
 ]
 
 const tutorialName = "Lessoner :3"
@@ -46,6 +56,7 @@ const { title } = Astro.props;
 				<TutorialSidebar topics={topics} tutorialName={tutorialName} />
 					<div class="max-w-4xl px-3">
 					<slot />
+			    <div class="min-h-20" />
 				</div>
 			</div>
 			<div class="min-h-60" />

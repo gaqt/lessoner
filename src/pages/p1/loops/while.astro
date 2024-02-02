@@ -1,0 +1,49 @@
+
+---
+import Layout from "../../../layouts/Layout.astro"
+import Code from "../../../components/Code.astro"
+import Terminal from "../../../components/Terminal.astro"
+
+import fs from "node:fs/promises"
+
+const url = new URL(process.cwd() + "/src/assets/while1.cpp", import.meta.url);
+const code = await fs.readFile(url, "utf-8");
+
+const url2 = new URL(process.cwd() + "/src/assets/while2.cpp", import.meta.url);
+const code2 = await fs.readFile(url2, "utf-8");
+---
+
+<Layout title="While Loop">
+  <h1 class="text-2xl">While Loop</h1><br>
+  <p>Até agora vimos como declarar variáveis, exibir e receber valores de entrada, e executar código condicionalmente, o próximo passo é extender isso para as estruturas de loops, para executar código repetidamente de forma a seguir alguma regra. Uma estrutura comum para realizar essa tarefa é o <strong>while loop</strong></p>
+  <br>
+  <p>Um loop while é uma estrutura de controle de fluxo que repete um bloco de código enquanto uma condição específica é verdadeira. A estrutura básica de um loop while é a seguinte:</p>
+  <br>
+  <Code code={code} lang="C++" title="while1.cpp" />
+  <br>
+  <p><strong>Condição:</strong> É uma expressão booleana que determina se o loop deve continuar ou não. Enquanto a condição for verdadeira, o bloco de código dentro do loop é executado.</p>
+  <br>
+  <p>Vamos criar um exemplo prático para entender melhor como os loops while funcionam. Neste exemplo, vamos escrever um programa simples que imprime os números de 1 a 5 usando um loop while.</p>
+  <br>
+  <Code code={code2} lang="C++" title="while2.cpp" />
+  <br>
+  <strong>Output:</strong>
+  <Terminal>
+    Número: 1<br>
+    Número: 2<br>
+    Número: 3<br>
+    Número: 4<br>
+    Número: 5<br>
+    Fim do programa.
+  </Terminal>
+  <br>
+  <p><strong>Inicialização da Variável de Controle:</strong> Declaramos e inicializamos uma variável chamada contador com o valor 1. Essa variável será usada para controlar o número de iterações no loop.</p>
+  <br>
+  <p><strong>Loop While:</strong> O loop while é usado para repetir um bloco de código enquanto a condição contador &lt;= 5 for verdadeira. Isso significa que o loop será executado enquanto o valor do contador for 5 ou menor.</p>
+  <br>
+  <p><strong>Bloco de Código no Loop:</strong> O bloco dentro do loop imprime o valor atual do contador e, em seguida, incrementa o contador.</p>
+  <br>
+  <p><strong>Mensagem Após o Loop:</strong> Após o término do loop, uma mensagem indicando o final do programa é exibida.</p>
+  <br>
+  <p>Este é um exemplo básico de como usar um loop while em C++. Experimente modificar a condição e o bloco de código dentro do loop para entender melhor como ele funciona.</p>
+</Layout>

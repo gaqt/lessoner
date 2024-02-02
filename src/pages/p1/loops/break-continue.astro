@@ -1,0 +1,57 @@
+---
+import Layout from "../../../layouts/Layout.astro"
+import Code from "../../../components/Code.astro"
+import Terminal from "../../../components/Terminal.astro"
+
+import fs from "node:fs/promises"
+
+const url = new URL(process.cwd() + "/src/assets/break.cpp", import.meta.url);
+const code = await fs.readFile(url, "utf-8");
+
+const url2 = new URL(process.cwd() + "/src/assets/continue.cpp", import.meta.url);
+const code2 = await fs.readFile(url2, "utf-8");
+---
+
+<Layout title="Break, Continue">
+  <h1 class="text-2xl">Break, Continue</h1><br>
+  <p>A instrução break é usada para interromper imediatamente a execução de um loop, independentemente da condição do loop. Ela é frequentemente usada para sair de um loop antes que a condição de término normal seja atingida. Veja um exemplo:</p>
+  <br>
+  <Code code={code} lang="C++" title="break.cpp" />
+  <br>
+  <strong>Output:</strong>
+  <Terminal>
+    Número: 1<br>
+    Número: 2<br>
+    Número: 3<br>
+    Número: 4<br>
+    Loop interrompido em i = 5<br>
+    Fim do programa.
+  </Terminal>
+  <br>
+  <p><strong>Loop For:</strong> O loop for é configurado para iterar de 1 a 10.</p>
+  <br>
+  <p><strong>Condição e Break:</strong> Dentro do loop, há uma verificação usando if. Se i atingir o valor 5, a instrução break é acionada, encerrando imediatamente o loop.</p>
+  <br>
+  <p><strong>Saída após o Loop:</strong> Após o loop, uma mensagem indicando o final do programa é exibida.</p>
+  <br>
+  <p>Agora, vamos explorar a instrução continue.</p>
+  <p>A instrução continue é usada para pular a execução do restante do código dentro de um loop e avançar para a próxima iteração do loop.</p>
+  <br>
+  <Code code={code2} lang="C++" title="continue.cpp" />
+  <br>
+  <strong>Output:</strong>
+  <Terminal>
+    Número: 1<br>
+    Número: 2<br>
+    Iteração ignorada em i = 3<br>
+    Número: 4<br>
+    Número: 5<br>
+    Fim do programa.
+  </Terminal>
+  <br>
+  <p><strong>Loop For:</strong> O loop for é configurado para iterar de 1 a 5.</p>
+  <br>
+  <p><strong>Condição e Continue:</strong> Dentro do loop, há uma verificação usando if. Se i for igual a 3, a instrução continue é acionada, fazendo com que o restante do código dentro do loop seja ignorado, e o loop avança para a próxima iteração.</p>
+  <br>
+  <p><strong>Saída após o Loop:</strong> Após o loop, uma mensagem indicando o final do programa é exibida.</p>
+</Layout>

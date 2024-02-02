@@ -1,0 +1,47 @@
+---
+import Layout from "../../../layouts/Layout.astro"
+import Code from "../../../components/Code.astro"
+import Terminal from "../../../components/Terminal.astro"
+
+import fs from "node:fs/promises"
+
+const url = new URL(process.cwd() + "/src/assets/for1.cpp", import.meta.url);
+const code = await fs.readFile(url, "utf-8");
+
+const url2 = new URL(process.cwd() + "/src/assets/for2.cpp", import.meta.url);
+const code2 = await fs.readFile(url2, "utf-8");
+---
+
+<Layout title="For Loop">
+  <h1 class="text-2xl">For Loop</h1><br>
+  <p>Um loop for é uma estrutura de controle de fluxo que executa um bloco de código um número específico de vezes. A estrutura básica de um for loop é a seguinte:</p>
+  <br>
+  <Code code={code} lang="C++" title="for1.cpp" />
+  <br>
+  <p><strong>Inicialização:</strong> É a parte onde você inicializa uma variável de controle que será usada no loop. Ela é executada apenas uma vez no início.</p>
+  <br>
+  <p><strong>Condição:</strong> É uma expressão booleana que determina se o loop deve continuar ou não. Enquanto a condição for verdadeira, o bloco de código dentro do loop é executado.</p>
+  <br>
+  <p><strong>Incremento/Decremento:</strong> É a parte onde você modifica a variável de controle. Ela é executada após o bloco de código do loop em cada iteração.</p>
+  <br>
+  <p>Vamos criar um exemplo prático para entender melhor como os loops for funcionam. Neste exemplo, vamos escrever um programa simples que imprime os números de 1 a 5 usando um for loop.</p>
+  <br>
+  <Code code={code2} lang="C++" title="for2.cpp" />
+  <br>
+  <strong>Output:</strong>
+  <Terminal>
+    Número: 1<br>
+    Número: 2<br>
+    Número: 3<br>
+    Número: 4<br>
+    Número: 5<br>
+    Fim do programa.
+  </Terminal>
+  <br>
+  <p><strong>Loop For:</strong> O loop for é usado para repetir um bloco de código enquanto a condição i &lt;= 5 for verdadeira. A variável i é inicializada com 1, o loop continuará enquanto i for menor ou igual a 5, e i será incrementado após cada iteração.</p>
+  <br>
+  <p><strong>Bloco de Código no Loop:</strong> O bloco dentro do loop imprime o valor atual de i.</p>
+  <br>
+  <p><strong>Mensagem Após o Loop:</strong> Após o término do loop, uma mensagem indicando o final do programa é exibida.</p>
+  <p>Este é um exemplo básico de como usar um for loop em C++. Assim como antes, experimente modificar a condição e o bloco de código dentro do loop para entender melhor como ele funciona.</p>
+</Layout>

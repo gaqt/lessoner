@@ -1,0 +1,48 @@
+---
+import Layout from "../../../layouts/Layout.astro"
+import Code from "../../../components/Code.astro"
+import Terminal from "../../../components/Terminal.astro"
+
+import fs from "node:fs/promises"
+
+const url = new URL(process.cwd() + "/src/assets/loops-encadeados.cpp", import.meta.url);
+const code = await fs.readFile(url, "utf-8");
+---
+
+<Layout title="Loops Encadeados">
+  <h1 class="text-2xl">Loops Encadeados</h1><br>
+  <p>Loops encadeados referem-se à situação em que um loop está dentro de outro. Essa estrutura é útil quando é necessário percorrer combinações de valores em várias condições. No entanto, é essencial ter cuidado ao usar loops encadeados, pois podem aumentar a complexidade do código.</p>
+  <p>Veja um Exemplo</p>
+  <br>
+  <Code code={code} lang="C++" title="loops-encadeados.cpp" />
+  <br>
+  <strong>Output:</strong>
+  <Terminal>
+<pre>
+Iteração externa: 1
+   Iteração interna: A
+   Iteração interna: B
+   Iteração interna: C
+Iteração externa: 2
+   Iteração interna: A
+   Iteração interna: B
+   Iteração interna: C
+Iteração externa: 3
+   Iteração interna: A
+   Iteração interna: B
+   Iteração interna: C
+Fim do programa.
+</pre>
+  </Terminal>
+  <br>
+  <p><strong>Loop Externo (For):</strong> O loop externo é configurado para iterar de 1 a 3 (for (int i = 1; i &lt;= 3; i++)).</p>
+  <br>
+  <p><strong>Bloco do Loop Externo:</strong> Dentro do bloco do loop externo, é exibida uma mensagem indicando a iteração externa atual.</p>
+  <br>
+  <p><strong>Loop Interno (For):</strong> Um segundo loop, o loop interno, é configurado para iterar de 'A' a 'C' <br>(for (char ch = 'A'; ch &lt;= 'C'; ch++)).</p>
+  <br>
+  <p><strong>Bloco do Loop Interno:</strong> Dentro do bloco do loop interno, é exibida uma mensagem indicando a iteração interna atual.</p>
+  <br>
+  <p><strong>Saída Após Loops Encadeados:</strong> Após a execução dos loops encadeados, uma mensagem indicando o final do programa é exibida.</p>
+  <p>É importante observar que, em loops encadeados, a execução do loop interno ocorre para cada iteração do loop externo. Isso cria uma combinação de todas as iterações possíveis dos dois loops.</p>
+</Layout>
