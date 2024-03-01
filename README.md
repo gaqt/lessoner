@@ -51,24 +51,7 @@ Coloque seu nome na FrontPage caso for utilizar
 - Notas sobre Garbage Collector
 - Exercícios
 
-### 7. Introdução a Otimização
-- Motivação
-- Contagem de instruções
-- Análise assintótica
-- Considerações sobre hardware
-- Exercícios
-
-### 8. Ordenação
-- Motivação
-- Lista de algoritmos comumente utilizados
-- Insertion Sort
-- Merge Sort
-- Counting Sort
-- Contagem de inversões
-- Heap Sort (por cima)
-- Exercícios
-
-### 9. Estruturas de Dados Abstratas do C++
+### 7. Estruturas de Dados Abstratas do C++
 - Motivação
 - pair
 - vector
@@ -79,6 +62,24 @@ Coloque seu nome na FrontPage caso for utilizar
 - set e unordered_set
 - map e unordered_map
 - Exercícios
+
+### 8. Introdução a Otimização
+- Motivação
+- Contagem de instruções
+- Análise assintótica
+- Considerações sobre hardware
+- Exercícios
+
+### 9. Ordenação
+- Motivação
+- Lista de algoritmos comumente utilizados
+- Insertion Sort
+- Merge Sort
+- Counting Sort
+- Contagem de inversões
+- Heap Sort (por cima)
+- Exercícios
+
 
 ### 10. Grafos e Árvores
 - Motivação
