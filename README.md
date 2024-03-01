@@ -1,4 +1,8 @@
-# Ementa das aulas
+# Link para a planilha
+https://docs.google.com/spreadsheets/d/1QvxVngrPeBXGgfG0FHwsuEb3s8rHeKUN9nx8nq08Wcw/edit#gid=0
+Coloque seu nome na FrontPage caso for utilizar
+
+# Plano de Aula (Sujeito a alterações)
 
 ## Parte 1 - Lógica de Programação
 
@@ -47,14 +51,14 @@
 - Notas sobre Garbage Collector
 - Exercícios
 
-### 8. Introdução a Otimização
+### 7. Introdução a Otimização
 - Motivação
 - Contagem de instruções
 - Análise assintótica
 - Considerações sobre hardware
 - Exercícios
 
-### 7. Ordenação
+### 8. Ordenação
 - Motivação
 - Lista de algoritmos comumente utilizados
 - Insertion Sort
@@ -64,7 +68,7 @@
 - Heap Sort (por cima)
 - Exercícios
 
-### 8. Estruturas de Dados Abstratas do C++
+### 9. Estruturas de Dados Abstratas do C++
 - Motivação
 - pair
 - vector
@@ -76,7 +80,7 @@
 - map
 - Exercícios
 
-### 9. Grafos e Árvores
+### 10. Grafos e Árvores
 - Motivação
 - Conceitos
 - Matriz de adjacência
@@ -90,7 +94,7 @@
 - Árvores geradoras mínimas (minimum spanning tree)
 - Exercícios
 
-### 10. Aritmética e Geometria Aplicadas
+### 11. Aritmética e Geometria Aplicadas
 - Revisão do básico
 - Teorema de Pitágoras
 - Distância Euclidiana
@@ -102,7 +106,7 @@
 - Aritmética modular simples
 - Exercícios
 
-### 11. Otimizações Gerais
+### 12. Otimizações Gerais
 - Busca Binária
 - Soma de Prefixos
 - Árvore de Segmentos
@@ -112,7 +116,7 @@
 - Union-find
 - Exercícios
 
-### 12. Gulosos e Programação Dinâmica
+### 13. Gulosos e Programação Dinâmica
 - Introdução
 - Problema das Palestras
 - Problema da Moeda
@@ -120,14 +124,24 @@
 - Longest Common Subsequence
 - Exercícios
 
-### 13. Concorrência
+### 14. Programação Orientada a Objetos
+- Motivação
+- Conceitos
+- Composição
+- Herança
+- Polimorfismo
+- Encapsulamento
+- Interfaces
+- Custo Benefício
+
+### 15. Concorrência
 - Motivação
 - Estilos
 - Implementação
 - Cuidados
 - Exercícios
 
-### 14. Convenções de Código
+### 15. Convenções de Código
 - Motivação
 - Indentação
 - Convenções de nomes
@@ -172,7 +186,26 @@
 - Realizando um request e obtendo uma resposta
 - Exercícios
 
-### 7. Frontend: React
+### 7. Bancos de Dados
+- Conceitos
+- Tipos de Bancos de Dados
+- SQL
+- NoSQL
+- Modelagem
+- Caching com Redis
+- Exercícios
+
+### 8. Backend Standalone: Nodejs + Express
+- Conceitos
+- Configurando o ambiente
+- Criando rotas API
+- Comunicação com o Banco de Dados
+- Utilizando uma ORM
+- Utilizando WebSockets
+- HTMX
+- Exercícios
+
+### 9. Frontend: React
 - Conceitos
 - Configurando o ambiente
 - Hello World
@@ -185,28 +218,10 @@
 - Introdução ao Nextjs
 - Exercícios
 
-### 8. Backend: Nodejs + Express
-- Conceitos
-- Configurando o ambiente
-- Criando rotas API
-- Comunicação com o Banco de Dados
-- Utilizando uma ORM
-- Utilizando WebSockets
-- Exercícios
-
-### 9. Backend: Go
+### 10. Backend: Go
 - Conceitos
 - Sintaxe
 - Paralelo ao Nodejs
-- Exercícios
-
-### 10. Bancos de Dados
-- Conceitos
-- Tipos de Bancos de Dados
-- SQL
-- NoSQL
-- Modelagem
-- Caching com Redis
 - Exercícios
 
 ### 11. Web Scraping e Consumo de API
@@ -216,17 +231,7 @@
 
 ## Parte 3 - Conceitos Avançados
 
-### 1. Programação Orientada a Objetos
-- Motivação
-- Conceitos
-- Composição
-- Herança
-- Polimorfismo
-- Encapsulamento
-- Interfaces
-- Custo Benefício
-
-### 2. Design Patterns
+### 1. Design Patterns
 - Conceitos
 - Gerais
 - Factory
@@ -238,13 +243,13 @@
 - Memento
 - Observer
 
-### 3. Programação Orientada a Dados
+### 2. Programação Orientada a Dados
 - Motivação
 - Conceitos
 - Demonstração
 
-### 4. Programação Funcional
+### 3. Programação Funcional
 - TODO
 
-### 5. Introdução a Assembly
+### 4. Introdução a Assembly
 - TODO
