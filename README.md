@@ -76,8 +76,8 @@ Coloque seu nome na FrontPage caso for utilizar
 - stack
 - queue
 - deque
-- set
-- map
+- set e unordered_set
+- map e unordered_map
 - Exercícios
 
 ### 10. Grafos e Árvores
