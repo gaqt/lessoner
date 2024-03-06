@@ -32,26 +32,33 @@ Coloque seu nome na FrontPage caso for utilizar
 - Analogias para visualizar N dimensões
 - Exercícios
 
-### 4. Funções
+### 4. Introdução a Otimização
+- Motivação
+- Análise assintótica
+- Considerações sobre hardware
+- Exercícios
+
+### 5. Funções
 - Definição
 - Utilizando valores de retorno
 - Recursividade
 - Exercícios
 
-### 5. Structs
+### 6. Structs
 - Definição
 - Passando structs como parâmetros
 - Exercícios
 
-### 6. Memória
+### 7. Memória
 - Entendendo a disposição da memória
 - Stack vs Heap
 - Ponteiros
 - malloc e new
-- Notas sobre Garbage Collector
+- Segurança de memória e Garbage Collector
+- Smart pointers
 - Exercícios
 
-### 7. Estruturas de Dados Abstratas do C++
+### 8. Estruturas de Dados Abstratas do C++
 - Motivação
 - pair
 - vector
@@ -63,13 +70,6 @@ Coloque seu nome na FrontPage caso for utilizar
 - map e unordered_map
 - Exercícios
 
-### 8. Introdução a Otimização
-- Motivação
-- Contagem de instruções
-- Análise assintótica
-- Considerações sobre hardware
-- Exercícios
-
 ### 9. Ordenação
 - Motivação
 - Lista de algoritmos comumente utilizados
@@ -77,9 +77,10 @@ Coloque seu nome na FrontPage caso for utilizar
 - Merge Sort
 - Counting Sort
 - Contagem de inversões
-- Heap Sort (por cima)
+- Heap Sort
+- Quick Sort
+- Quick Select
 - Exercícios
-
 
 ### 10. Grafos e Árvores
 - Motivação
@@ -104,7 +105,10 @@ Coloque seu nome na FrontPage caso for utilizar
 - Vetores
 - Números primos
 - Crivo de Erastótenes
+- Números Complexos
+- Realizando N trocas de estado com objetos comutativos
 - Convex Hull
+- Sweep Line
 - Aritmética modular simples
 - Exercícios
 
@@ -116,6 +120,7 @@ Coloque seu nome na FrontPage caso for utilizar
 - BIT (Árvore de Fenwick)
 - Retornando às estruturas de dados
 - Union-find
+- Compressão de Coordenadas
 - Exercícios
 
 ### 13. Gulosos e Programação Dinâmica
