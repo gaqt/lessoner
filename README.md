@@ -86,6 +86,7 @@ Coloque seu nome na FrontPage caso for utilizar
 - Conceitos
 - Matriz de adjacência
 - Lista de adjacência
+- Conjunto de adjacência
 - Busca por profundidade
 - Busca por largura
 - Encontrando componentes conexas
