@@ -121,6 +121,7 @@ Coloque seu nome na FrontPage caso for utilizar
 - Retornando às estruturas de dados
 - Union-find
 - Compressão de Coordenadas
+- Bitmasks para representação de conjuntos e combinações
 - Exercícios
 
 ### 13. Gulosos e Programação Dinâmica
